@@ -53,7 +53,8 @@ def total_gross(source)
   gross_all_directors = 0 
   director_index = 0 
   while director_index < source.length do
-    gross_all_directors += directors_totals(source)
+    shortcut = directors_totals(source)
+    gross_all_directors += shortcut[director_index]
     
     director_index += 1 
   end
