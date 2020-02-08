@@ -54,7 +54,8 @@ def total_gross(source)
   director_index = 0 
   while director_index < source.length do
     shortcut = directors_totals(source)
-    gross_all_directors += shortcut
+    shorter_cut = list_of_directors(source)
+    gross_all_directors += shortcut[shorter_cut[director_index]]
     
     director_index += 1 
   end
